@@ -24,11 +24,4 @@ public class Player_Controller : MonoBehaviour
         Vector3 movement = new Vector3(horizontalInput, 0, 0) * speed * Time.deltaTime;
         player.transform.Translate(movement);
     }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.tag == "Enemy") {
-            Debug.Log("Player collided with sphere!");
-        }
-    }
 }
