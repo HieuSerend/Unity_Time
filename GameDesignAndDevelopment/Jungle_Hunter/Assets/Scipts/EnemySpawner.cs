@@ -38,7 +38,6 @@ public class EnemySpawner : MonoBehaviour
         {
             Vector3 spawnPosition = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnZ);
             GameObject enemy = new GameObject();
-            // Gán tốc độ hiện tại cho enemy mới
             for (int i = 0; i < 2; i++)
             {
                 enemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);

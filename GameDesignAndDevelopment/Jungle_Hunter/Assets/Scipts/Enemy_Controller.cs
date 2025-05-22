@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class Enemy_Controller : MonoBehaviour
 {
-    public float speed = 15f;
-    public float speedIncrease = 1.0f; 
-    public float maxSpeed = 100f; 
-    public float increaseInterval = 1.0f;
-    public float timer = 0f;
+    public float speed = 10f;
     // Start is called before the first frame update
     void Start()
     {
