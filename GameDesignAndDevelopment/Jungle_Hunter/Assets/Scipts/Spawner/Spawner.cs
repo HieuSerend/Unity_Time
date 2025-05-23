@@ -10,7 +10,7 @@ public abstract class Spawner : MonoBehaviour
     public float minSpawnInterval = 0.5f;
 
     public int minSpawnQuantity = 1;
-    public int maxSpawnQuantity = 6;
+    public int maxSpawnQuantity = 2;
 
     protected float currentSpawnInterval;
     protected virtual void Start()

@@ -16,9 +16,8 @@ public class BulletSpawner : Spawner
 
     private void SpawnBullet()
     {
-        Vector3 spawnPos = firePoint != null ? firePoint.position : transform.position;
-        GameObject bullet = Instantiate(spawnPrefab, spawnPos, Quaternion.identity);
-        Destroy(bullet, 6f);
+        Vector3 spawnPos = new Vector3(firePoint.position.x, 3, 5);
+        Instantiate(spawnPrefab, spawnPos, Quaternion.identity);
     }
 
     protected override IEnumerator SpawnObjects()
