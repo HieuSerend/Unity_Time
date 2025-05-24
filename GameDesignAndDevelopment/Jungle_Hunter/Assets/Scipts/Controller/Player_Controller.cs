@@ -16,7 +16,14 @@ public class Player_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Get the input from the player
+        if (player != null)
+        {
+            MovePlayer();
+        }
+    }
+
+    private void MovePlayer()
+    {
         float horizontalInput = Input.GetAxis("Horizontal");
         //float verticalInput = Input.GetAxis("Vertical");
 
